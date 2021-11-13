@@ -1,0 +1,36 @@
+/*font-family: 'Open Sans', sans-serif;
+
+font-family: 'Raleway', sans-serif;
+*/
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px 15px;
+
+    h2 {
+        color: #08A6E4;
+        font-family: 'Raleway', sans-serif;
+        font-size: 26px;
+        font-weight: 300;
+    }
+
+    p {
+        display: inline-block;
+        padding-top: 5px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 11px;
+        color: #A5A5A5;
+    }
+
+    .footer__link {
+        display: flex;
+        align-items: center;
+
+        a {
+            display: block;
+            padding: 5px;
+        }
+    }
+}
