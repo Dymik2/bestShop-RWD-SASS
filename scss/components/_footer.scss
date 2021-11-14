@@ -6,8 +6,9 @@ font-family: 'Raleway', sans-serif;
 .footer__wrapper {
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    // background-color: white;
     padding: 20px 15px;
+    box-shadow: 0px -5px 40px #00000029;
 
     h2 {
         color: #08A6E4;
