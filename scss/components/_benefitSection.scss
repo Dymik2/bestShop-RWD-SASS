@@ -82,4 +82,62 @@ font-family: 'Raleway', sans-serif;
         }
     }
 
+    @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .benefits__wrapper {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            height: 30vh;
+            margin-top: 30px;
+
+            .descible {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                height: 100%;
+                padding-left: 30px;
+                padding-right: 30px;
+                background-color: #FFFFFF;
+            }
+
+            .picture {
+                position: relative;
+                display: flex;
+                height: 100%;
+                align-items: flex-end;
+                justify-content: center;
+                background-color: #FFFFFF;
+                width: 50%;
+
+                .first_shape {
+                    right: 20%;
+                    top: 10%;
+                }
+
+                .second_shape {
+                    left: 30%;
+                }
+
+                img {
+                    width: 45%;
+                    height: auto;
+                    z-index: 3;
+                }
+            }
+
+
+        }
+
+        .benefits__wrapper:nth-of-type(1) {
+            flex-direction: row-reverse;
+        }
+    }
 }

@@ -4,7 +4,21 @@
     box-sizing: border-box;
 }
 
+.container {
+    max-width: 1352px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
 main {
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
     background-color: #F7F7F7;
-    width: 100vw;
+
 }

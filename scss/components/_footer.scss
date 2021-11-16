@@ -2,13 +2,22 @@
 
 font-family: 'Raleway', sans-serif;
 */
-
-.footer__wrapper {
+footer {
     display: flex;
-    justify-content: space-between;
-    // background-color: white;
+    justify-content: center;
+    width: 100vw;
     padding: 20px 15px;
     box-shadow: 0px -5px 40px #00000029;
+}
+
+.footer__wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    // background-color: white;
+
 
     h2 {
         color: #08A6E4;
