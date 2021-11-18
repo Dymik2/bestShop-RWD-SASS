@@ -39,49 +39,48 @@ font-family: 'Raleway', sans-serif;
         }
 
         &:first-of-type {
-            border: 1px solid #FB3B64;
+            border: 1px solid $color_red;
             margin: 1.5rem 1.5rem 2rem 1.5rem;
 
             h2 {
-                color: #FB3B64;
+                color: $color_red;
             }
 
             a {
-                background-color: #FB3B64;
+                background-color: $color_red;
             }
         }
 
         &:nth-of-type(2) {
-            border: 1px solid #08A6E4;
+            border: 1px solid $color_blue;
             margin: 1.5rem .5rem 2rem .5rem;
             box-shadow: 5px 10px 27px #07ACE629;
             line-height: 2.5rem;
 
             h2 {
-                color: #08A6E4;
+                color: $color_blue;
             }
 
             a {
-                background-color: #08A6E4;
+                background-color: $color_blue;
             }
         }
 
         &:last-of-type {
-            border: 1px solid #55DFB4;
+            border: 1px solid $color_green;
             margin: 1.5rem;
 
             h2 {
-                color: #55DFB4;
+                color: $color_green;
             }
 
             a {
-                background-color: #55DFB4;
+                background-color: $color_green
             }
         }
 
         div:first-of-type {
-            display: flex;
-            flex-direction: column;
+            @include flexcolumn();
             justify-content: center;
 
             p {
@@ -107,11 +106,11 @@ font-family: 'Raleway', sans-serif;
             width: 50%;
 
             .fa-check-square {
-                color: #55DFB4;
+                color: $color_green;
             }
 
             .fa-times-circle {
-                color: #FB3B64;
+                color: $color_red;
             }
         }
 
@@ -119,7 +118,7 @@ font-family: 'Raleway', sans-serif;
             font-family: 'Raleway', sans-serif;
             font-size: 20px;
             font-weight: bold;
-            color: #13253B;
+            color: $color_darkblue;
             text-align: center;
         }
 
@@ -132,8 +131,7 @@ font-family: 'Raleway', sans-serif;
 
 
     @media (min-width: 1024px) {
-        display: flex;
-        flex-direction: column;
+        @include flexcolumn();
         align-items: center;
         padding: 40px 0;
 
@@ -144,8 +142,7 @@ font-family: 'Raleway', sans-serif;
             width: 100%;
 
             .offer {
-                display: flex;
-                flex-direction: column;
+                @include flexcolumn();
                 padding: 40px 40px;
 
                 &:nth-of-type(1) {

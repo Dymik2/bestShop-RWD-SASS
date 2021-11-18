@@ -17,7 +17,7 @@ font-family: 'Raleway', sans-serif;
             position: relative;
 
             .first_shape {
-                background-color: #FB3B64;
+                background-color: $color_red;
                 width: 8rem;
                 height: 8rem;
                 position: absolute;
@@ -29,7 +29,7 @@ font-family: 'Raleway', sans-serif;
             }
 
             .second_shape {
-                background-color: #08A6E4;
+                background-color: $color_blue;
                 width: 9rem;
                 height: 9rem;
                 top: -5%;
@@ -46,7 +46,7 @@ font-family: 'Raleway', sans-serif;
             }
 
             &:last-of-type {
-                background-color: #55DFB4;
+                background-color: $color_green;
             }
 
 
@@ -114,8 +114,7 @@ font-family: 'Raleway', sans-serif;
 
 
     @media (min-width: 1024px) {
-        display: flex;
-        flex-direction: column;
+        @include flexcolumn();
         align-items: center;
 
         .benefits__wrapper {
@@ -131,8 +130,7 @@ font-family: 'Raleway', sans-serif;
             padding-bottom: 30px;
 
             .descible {
-                display: flex;
-                flex-direction: column;
+                @include flexcolumn();
                 align-items: center;
                 justify-content: center;
                 width: 50%;
@@ -193,13 +191,13 @@ font-family: 'Raleway', sans-serif;
             margin-top: 40px;
 
             p::after {
-                background-color: #FB3B64;
+                background-color: $color_red;
             }
         }
 
         .benefits__wrapper:nth-of-type(2) {
             p::after {
-                background-color: #08A6E4;
+                background-color: $color_blue;
             }
         }
 
@@ -215,7 +213,7 @@ font-family: 'Raleway', sans-serif;
             }
 
             p::after {
-                background-color: #55DFB4;
+                background-color: $color_green;
             }
         }
 

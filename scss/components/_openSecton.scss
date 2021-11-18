@@ -7,8 +7,7 @@ sans-serif;
 .open__section {
     padding-top: 90px;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
+    @include flexcolumn();
     justify-content: space-between;
     background-color: white;
 
@@ -36,7 +35,7 @@ sans-serif;
             font-family: 'Open Sans', sans-serif;
             color: #FFFFFF;
             text-align: center;
-            background-color: #08A6E4;
+            background-color: $color_blue;
             padding: 20px 25px;
             border-radius: 30px;
             text-decoration: none;
@@ -65,8 +64,7 @@ sans-serif;
 
     @media (min-width: 1024px) {
         .text {
-            display: flex;
-            flex-direction: column;
+            @include flexcolumn();
             justify-content: center;
             align-items: center;
 

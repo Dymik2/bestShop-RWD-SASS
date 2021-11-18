@@ -54,14 +54,13 @@ font-family: 'Raleway', sans-serif;
     }
 
     form {
-        display: flex;
-        flex-direction: column;
+        @include flexcolumn();
         justify-content: center;
         align-items: flex-start;
 
         label {
             display: block;
-            color: #08A6E4;
+            color: $color_blue;
             font-family: 'Open Sans', sans-serif;
             font-size: 11px;
             font-weight: bold;
@@ -75,7 +74,7 @@ font-family: 'Raleway', sans-serif;
             border: none;
             display: block;
             width: 100%;
-            border-bottom: 2px solid #A5A5A5;
+            border-bottom: 2px solid $color_gray;
         }
 
         .checkbox {
@@ -98,7 +97,7 @@ font-family: 'Raleway', sans-serif;
                 height: 20px;
                 flex-shrink: 0;
                 flex-basis: 20px;
-                border: 2px solid #A5A5A5;
+                border: 2px solid $color_gray;
                 cursor: pointer;
                 margin-right: 15px;
             }
@@ -136,7 +135,7 @@ font-family: 'Raleway', sans-serif;
             font-weight: 700;
             padding: 15px 70px;
             text-decoration: none;
-            background-color: #08A6E4;
+            background-color: $color_blue;
             box-shadow: 5px 10px 14px #07ACE629;
             border-radius: 35px;
             color: white;
@@ -150,8 +149,7 @@ font-family: 'Raleway', sans-serif;
         align-items: flex-start;
 
         .contact__wrapper {
-            display: flex;
-            flex-direction: column;
+            @include flexcolumn();
             justify-content: center;
             width: 30%;
 
@@ -175,8 +173,7 @@ font-family: 'Raleway', sans-serif;
         }
 
         .form__wrapper {
-            display: flex;
-            flex-direction: column;
+            @include flexcolumn();
             justify-content: center;
             align-items: flex-start;
             width: 30%;
