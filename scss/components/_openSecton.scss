@@ -61,6 +61,9 @@ sans-serif;
         }
     }
 
+    @media(max-width: 1023px)and (orientation: landscape) {
+        height: 100%;
+    }
 
     @media (min-width: 1024px) {
         .text {
